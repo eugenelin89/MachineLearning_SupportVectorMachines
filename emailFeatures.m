@@ -48,9 +48,14 @@ x = zeros(n, 1);
 %
 %
 
+%word_indices_size = size(word_indices, 2);
 
+%for i = 1: word_indices_size,
+%  index = word_indices(i);
+%  x(index) = 1; 
+%end;
 
-
+x(word_indices) = 1;
 
 
 
